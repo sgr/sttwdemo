@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    image: sensortag
+    container_name: sensortag
+    network_mode: "host"
+    volumes:
+      - ./conf:/home/app/conf
+    build:
+      context: .

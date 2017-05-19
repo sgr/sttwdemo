@@ -1,0 +1,24 @@
+{
+  "name": "sensortag",
+  "version": "1.0.0",
+  "description": "A Ti SensorTag <-> ThingWorx demonstration",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/aobadenshi/sensortag.git"
+  },
+  "author": "Shigeru Fujiwara",
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/aobadenshi/sensortag#readme",
+  "dependencies": {
+    "js-yaml": "^3.8.4",
+    "bluebird": "^3.5.0",
+    "console-stamp": "^0.2.5",
+    "sensortag": "^1.3.0",
+    "thingworx-api": "./tmp/thingworx-nodejs-agent-tls/thingworx-api",
+    "thingworx-core": "./tmp/thingworx-nodejs-agent-tls/thingworx-core",
+    "thingworx-ffi": "./tmp/thingworx-nodejs-agent-tls/thingworx-ffi",
+    "thingworx-utils": "./tmp/thingworx-nodejs-agent-tls/thingworx-utils"
+  },
+  "private": true
+}

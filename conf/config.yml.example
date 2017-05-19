@@ -1,0 +1,27 @@
+# BLEデバイス。本体内蔵なら0。別途USB等でBLEドングルを使うといった場合に1にする。
+bleDeviceId: 0
+
+# センサータグをスキャンする間隔
+stIntervalMs: 60000
+
+# ここで指定したIDのセンサータグだけ対象となる。
+# ThingWorx上の対応するセンサータグのThingの名前を値にする。
+sensorTags:
+  b0b448c8a001: tag1
+  b0b448c96a00: tag2
+  a0e6f8af1606: tag3
+
+# ThingWorxへの接続を有効にする。
+enableThingWorx: true
+
+# 以下はThingWorxとの接続設定
+
+connection:
+  host: YOUR.THINGWORX.HOSTNAME # ホスト名
+  port: 443 # ポート番号。httpsの場合は443
+  app_key: YOUR_APPLICATION_KEY # ThingWorx上で作ったApplication keyの値
+
+tls:
+  encryption: true
+  validate_certificate: false # Let's encryptのSSL証明書だとなぜか検証に失敗したのでfalseにしている。
+ # allow_self_signed_certificate: false
