@@ -2,6 +2,7 @@ FROM armhf/node:6.10-slim
 
 RUN set -x \
  && update-ca-certificates \
+ && sed -i.bak -e "s%http://deb.debian.org/debian%http://ftp.jp.debian.org/debian%g" /etc/apt/sources.list \
 # && useradd -d /home/app -s /bin/false app \
  && apt-get update \
  && apt-get install -y bluetooth bluez bluez-tools libbluetooth-dev libudev-dev libcap2-bin 

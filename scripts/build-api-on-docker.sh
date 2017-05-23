@@ -1,7 +1,7 @@
 #!/bin/sh
 
 WORK=/build/agent
- 
+sed -i.bak -e "s%http://deb.debian.org/debian%http://ftp.jp.debian.org/debian%g" /etc/apt/sources.list 
 apt-get update
 apt-get install -y build-essential unzip libssl-dev
 

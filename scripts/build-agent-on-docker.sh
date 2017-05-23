@@ -2,7 +2,7 @@
 #AGENT_URL=https://github.com/ThingworxDevZone/thingworx-nodejs-agent/archive/master.zip
 AGENT_URL=https://github.com/sgr/thingworx-nodejs-agent/archive/tls.zip
 BUILD=/build
-
+sed -i.bak -e "s%http://deb.debian.org/debian%http://ftp.jp.debian.org/debian%g" /etc/apt/sources.list
 apt-get update
 apt-get install -y wget unzip build-essential python-dev
 npm install node-gyp -g
