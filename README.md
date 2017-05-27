@@ -10,7 +10,6 @@
 * Set up Docker
 * Build docker-compose from source and install
 * Check out this repository
-* Download ThingWorx C SDK (C_SDK.zip) from https://developer.thingworx.com/ into the checked out directory
 * Change directory in the checked out directory and press 'make'
 
 ### お問い合わせ ###

@@ -1,5 +1,3 @@
-agent
 *.log
 .DS_Store
-C_SDK.zip
 conf/config.yml
